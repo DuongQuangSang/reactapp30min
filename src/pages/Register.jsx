@@ -1,7 +1,7 @@
 import React from 'react'
-import '../style.scss'
+import addAvatar from '../img/addAvatar.png'
 
-export default function Register() {
+const Register = () => {
     return (
         <div className='formContainer'>
             <div className='formWrapper'>
@@ -13,7 +13,8 @@ export default function Register() {
                     <input type='password' placeholder='password'></input>
                     <input style={{display:"none"}} type='file' id='file'></input>
                     <label htmlFor='file'>
-                        <img src='' alt=''></img>
+                        <img src={addAvatar} alt='addAvatar'></img>
+                        <span>Add an avatar</span>
                     </label>
                     <button>Sign up</button>
                 </form>
@@ -22,3 +23,5 @@ export default function Register() {
         </div>
     )
 }
+
+export default Register
