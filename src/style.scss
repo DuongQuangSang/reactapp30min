@@ -103,7 +103,7 @@ body {
     justify-content: center;
 
     .container {
-        border: 1px solid white;
+        // border: 1px solid white;
         border-radius: 10px;
         width: 65%;
         height: 80%;
@@ -159,6 +159,8 @@ body {
                         border: none;
                         color: white;
                         outline: none;
+                        height: 40px;
+                        padding-left: 10px;
 
                         &::placeholder {
                             color: lightgray;
